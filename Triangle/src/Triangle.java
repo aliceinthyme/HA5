@@ -41,16 +41,16 @@ public class Triangle {
     }
     public void stretch(int x, int y, int k) { //get diff x and x1, mult diff by k, add diff to x1
         int diffa = (a.getX()-x)*k;
-        a.setX(a.getX()+diffa);
+        a.setX(x+diffa);
         int diffay = (a.getY()-y)*k;
-        a.setY(a.getY()+diffay);
+        a.setY(y+diffay);
         int diffb = (b.getX()-x)*k;
-        b.setX(b.getX()+diffb);
+        b.setX(x+diffb);
         int diffby = (b.getY()-y)*k;
-        b.setY(b.getY()+diffby);
+        b.setY(y+diffby);
         int diffc = (c.getX()-x)*k;
-        c.setX(c.getX()+diffc);
+        c.setX(x+diffc);
         int diffcy = (c.getY()-y)*k;
-        c.setY(c.getY()+diffcy);
+        c.setY(y+diffcy);
     }   //idk I think this is correct? My brain doesnt do spacial stuff well, so there is genuinely no way for me to process this properly
 }
